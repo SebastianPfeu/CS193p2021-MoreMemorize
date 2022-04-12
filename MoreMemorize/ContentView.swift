@@ -25,6 +25,12 @@ struct ContentView: View {
                 }
             }
             .foregroundColor(.red)
+            Button {
+                viewModel.newGame()
+            } label: {
+                Text("New Game").font(.largeTitle)
+            }
+
         }
         .padding(.horizontal)
     }
