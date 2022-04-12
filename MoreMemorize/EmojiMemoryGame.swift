@@ -33,6 +33,24 @@ class EmojiMemoryGame: ObservableObject {
             emojis: ["🏠", "🏭", "🏢", "🏣", "🏥", "🏨", "🏛", "⛪️", "🕌", "🛕", "🏚", "🛖"],
             numberOfPairsOfCards: 7,
             color: "green"
+        ),
+        Theme(
+            name: "Sports",
+            emojis: ["⚽️", "🏀", "🏈", "⚾️", "🥎", "🎾", "🏐", "🏉", "🥏", "🎱", "🪀", "🏓", "🏸"],
+            numberOfPairsOfCards: 6,
+            color: "yellow"
+        ),
+        Theme(
+            name: "Flags",
+            emojis: ["🇦🇺", "🇧🇪", "🇧🇦", "🇧🇷", "🇧🇬", "🇨🇳", "🇨🇮", "🇩🇰", "🇩🇪", "🇪🇪", "🇫🇷", "🇬🇷"],
+            numberOfPairsOfCards: 6,
+            color: "purple"
+        ),
+        Theme(
+            name: "Buildings",
+            emojis: ["😀", "😁", "😅", "😂", "🥲", "☺️", "😇", "😉", "😍"],
+            numberOfPairsOfCards: 9,
+            color: "orange"
         )
     ]
     
