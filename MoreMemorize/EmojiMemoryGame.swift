@@ -47,7 +47,7 @@ class EmojiMemoryGame: ObservableObject {
             color: "purple"
         ),
         Theme(
-            name: "Buildings",
+            name: "Smileys",
             emojis: ["😀", "😁", "😅", "😂", "🥲", "☺️", "😇", "😉", "😍"],
             numberOfPairsOfCards: 9,
             color: "orange"
