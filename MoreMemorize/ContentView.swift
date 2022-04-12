@@ -12,7 +12,11 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("Memorize!").font(.largeTitle)
+            HStack {
+                Text("Memorize!").font(.largeTitle)
+                Spacer()
+                Text("Score: \(viewModel.score)").font(.largeTitle)
+            }
             ScrollView {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 65))]) {
                     ForEach(viewModel.cards) { card in
