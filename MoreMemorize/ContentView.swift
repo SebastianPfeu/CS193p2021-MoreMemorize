@@ -28,7 +28,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .foregroundColor(.red)
+            .foregroundColor(viewModel.themeColor)
             Button {
                 viewModel.newGame()
             } label: {
