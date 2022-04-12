@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("Memorize!").font(.largeTitle)
+                Text("\(viewModel.themeName)").font(.largeTitle)
                 Spacer()
                 Text("Score: \(viewModel.score)").font(.largeTitle)
             }

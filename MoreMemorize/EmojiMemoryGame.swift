@@ -17,19 +17,19 @@ class EmojiMemoryGame: ObservableObject {
     
     static var themes: Array<Theme> = [
         Theme(
-            name: "vehicles",
+            name: "Vehicles",
             emojis: ["🚗", "🚕", "🚙", "🚌", "🚎", "🏎", "🦼", "🛴", "🚲", "🛵", "🏍", "🛺", "🚁", "🛸", "🚀", "🛶", "⛵️", "🚤", "🛥", "🛳", "⛴", "🚢", "🚜", "🚛"],
             numberOfPairsOfCards: 5,
             color: "red"
         ),
         Theme(
-            name: "animals",
+            name: "Animals",
             emojis: ["🐶", "🐱", "🐭", "🐹", "🦊", "🐼", "🐯", "🦁", "🐸", "🐒", "🐥", "🦅", "🦇", "🪱", "🦄", "🐞"],
             numberOfPairsOfCards: 8,
             color: "blue"
         ),
         Theme(
-            name: "buildings",
+            name: "Buildings",
             emojis: ["🏠", "🏭", "🏢", "🏣", "🏥", "🏨", "🏛", "⛪️", "🕌", "🛕", "🏚", "🛖"],
             numberOfPairsOfCards: 7,
             color: "green"
@@ -43,6 +43,10 @@ class EmojiMemoryGame: ObservableObject {
     @Published private var model: MemoryGame<String>
     
     private var theme: Theme
+    
+    var themeName: String {
+        return theme.name
+    }
     
     var score: Int {
         return model.score
